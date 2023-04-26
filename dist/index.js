@@ -1,2 +1,18 @@
-"use strict";
-console.log("It's working!!");
+class Player {
+	constructor(first, last) {
+		this.first = first;
+		this.last = last;
+		console.log("in constructor");
+	}
+	taunt() {
+		console.log("Booyah!");
+	}
+}
+
+const player1 = new Player("Pietje", "Puk");
+player1.taunt();
+console.log(player1.first);
+console.log(player1.last);
+
+const player2 = new Player("Charlie", "Brown");
+player2.taunt();
